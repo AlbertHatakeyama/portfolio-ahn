@@ -13,30 +13,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/favicon.ico" sizes="32x32" href="assets/imagens/favicon-32x32.png">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg fundo-nav mx-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="assets/imagens/logo-ahn.jpeg"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#sobre-mim">Sobre Mim</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Habilidades</a>
-                        </li>
-                    </ul>
+                <div class="col-4">
+                    <a href="#home" class="">
+                        <img src="assets/imagens/logo-ahn.jpeg" class="img-fluid logo-header" alt="">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#sobre-mim">Sobre Mim</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>

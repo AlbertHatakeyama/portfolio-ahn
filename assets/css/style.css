@@ -1,0 +1,20 @@
+:root{
+    --color-nav:#6a9eda;
+    --color-border-nav:#5086c1;
+
+}
+.fundo-nav{
+    background-color: var(--color-nav);
+    border-bottom: 1px solid var(color-border-nav);
+    border-radius: 50px;
+    position: absolute;
+    z-index: 999;
+    height: 80px;
+    width: 89%;
+    margin: 2rem;
+
+}
+.logo-header{
+    height: 85px;
+    border-radius: 3rem;
+}

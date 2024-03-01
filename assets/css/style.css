@@ -1,20 +1,45 @@
 :root{
     --color-nav:#6a9eda;
     --color-border-nav:#5086c1;
-
+    --color-home:#5d2868;
+body{
+    color: #ffffff;
+}
 }
 .fundo-nav{
     background-color: var(--color-nav);
     border-bottom: 1px solid var(color-border-nav);
     border-radius: 50px;
-    position: absolute;
-    z-index: 999;
-    height: 80px;
-    width: 89%;
+    width: 80%;
     margin: 2rem;
 
 }
 .logo-header{
-    height: 85px;
+    height: 75px;
     border-radius: 3rem;
+}
+
+.home{
+    background-color: var(--color-home);
+}
+#texto-digitado {
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitar 4s steps(40, end);
+}#cursor {
+    display: inline-block;
+    width: 5rem;
+    height: 1em;
+    background-color: #5497e4;
+    animation: piscarCursor 1s ;
+}
+
+@keyframes digitar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }

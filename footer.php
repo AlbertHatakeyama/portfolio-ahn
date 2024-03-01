@@ -10,26 +10,20 @@
 <script rel="stylesheet" defer href="assets/js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    // Saudação e texto que será digitado
-    var saudacao = "<?php echo $saudacao; ?>";
-    var texto = "Olá " + saudacao + ", sou Albert Desenvolvedor front end";
+     // Function to write the sentence
+    function writeSentence(sentence, index, element) {
+    if (index < sentence.length) {
+        // Get the element where the sentence will be written
+        const targetElement = document.getElementById(element);
 
-    // Função para simular digitação
-    function simularDigitar(texto, elemento) {
-        elemento.textContent = ''; // Limpa o conteúdo do elemento antes de começar a simulação
-        var i = 0;
-        var intervalo = setInterval(function() {
-            elemento.textContent += texto.charAt(i);
-            i++;
-            if (i >= texto.length) {
-                clearInterval(intervalo);
-            }
-        }, 100); // Tempo de espera entre cada caractere (em milissegundos)
+        // Append the character at the current index
+        targetElement.textContent += sentence[index];
+
+        // Increment the index and set a delay of 50 milliseconds
+        setTimeout(() => writeSentence(sentence, index + 1, element), 70);
+    }
     }
 
-    // Elemento onde o texto será digitado
-    var elementoDigitado = document.getElementById("texto-digitado");
-
-    // Chamar a função para iniciar a animação de digitação
-    simularDigitar(texto, elementoDigitado);
+    // Call the function with the sentence you want to write and the element ID
+    writeSentence("Olá <?php echo $saudacao; ?>, sou Albert desenvolvedor front-end, legal ver você aqui, por favor deixe me apresentar brevemente 👇​", 0, "texto-digitado");
 </script>

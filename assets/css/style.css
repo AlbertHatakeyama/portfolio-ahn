@@ -1,18 +1,21 @@
 :root{
     --color-nav:#6a9eda;
     --color-border-nav:#5086c1;
-    --color-home:#5d2868;
-body{
-    color: #ffffff;
-}
+
+    body{
+        color: var(--cor-principal);
+        padding: 0rem;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main{ 
+
+    }
 }
 .fundo-nav{
     background-color: var(--color-nav);
-    border-bottom: 1px solid var(color-border-nav);
-    border-radius: 50px;
-    width: 80%;
-    margin: 2rem;
-
+    height: auto;
 }
 .logo-header{
     height: 75px;
@@ -20,26 +23,28 @@ body{
 }
 
 .home{
-    background-color: var(--color-home);
-}
-#texto-digitado {
-    border-right: 2px solid #000;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: digitar 4s steps(40, end);
-}#cursor {
-    display: inline-block;
-    width: 5rem;
-    height: 1em;
-    background-color: #5497e4;
-    animation: piscarCursor 1s ;
+    background-image: url(../imagens/banner1.jpg);
+    min-height: auto;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-@keyframes digitar {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+.foto-perfil{
+    height: 450px;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,  0, 0, 0.7), 0 6px 20px
 }
+section 
+    .sobremim {
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+        line-height: 1.5;
+        max-width: 90%;
+        margin: auto;    
+    }
+    card{
+        padding: 0%;
+    }

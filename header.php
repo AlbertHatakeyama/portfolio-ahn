@@ -17,8 +17,8 @@
 </head>
 <body>
     <header>
-        <section class="container">
-            <nav class="navbar navbar-expand-lg fundo-nav px-4 py-2">
+        <section>
+            <nav class="navbar navbar-expand-lg fundo-nav">
                 <div class="container">
                     <a class="navbar-brand" href="#home">
                         <img src="assets/imagens/logo-ahn.jpeg" class="logo-header img-fluid" alt="">

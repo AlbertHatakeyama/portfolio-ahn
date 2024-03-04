@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12 text-end">
-                    <img src="assets/imagens/logo-ahn.jpeg" class="img-fluid foto-perfil my-5" alt="">
+                    <img src="assets/imagens/img-portifolio1.jpg" class="img-fluid foto-perfil my-5" alt="">
                 </div>
                 </div>
             </div>
@@ -97,75 +97,150 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <!-- Primeiros 3 projetos -->
+            <div class="row"><!-- Primeiros 3 projetos -->
                 <div class="col-md-4 col-sm-6 link-projetos mb-2">
-                    <div class="card">
-                        <a class="text-decoration-none" href="https://www.multiclad.com.br/">
-                            <div class="card-body">
-                                <h5 class="card-title">Multiclad</h5>
-                                <p class="card-text">Realizei esse site quando estava na BMA Soluções Digitais</p>
+                    <div class="card h-100">
+                        <img src="assets/imagens/projetos/multiclad.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                            <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt=""> 
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Projetos 1</h5>
+                            <p class="card-text">Realizei esse site quando estava no primeiro estágio</p>
+                            <div class="linguagens d-none">
+                                <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt="">
+                                
                             </div>
-                        </a>
-                    </div>
-                </div>  
-                <div class="col-md-4 col-sm-6 link-projetos mb-2">
-                    <div class="card">
-                        <a class="text-decoration-none" href="https://www.prizmaq.com.br/">
-                            <div class="card-body">
-                                <h5 class="card-title">Prizmaq</h5>
-                                <p class="card-text">Realizei esse LP(Land Page) quando estava na BMA Soluções Digitais</p>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 link-projetos mb-2">
-                    <div class="card">
-                        <a class="text-decoration-none" href="https://www.grupoboschi.com.br/lp2/consorcio2/">
-                            <div class="card-body">
-                                <h5 class="card-title">Grupo Boschi</h5>
-                                <p class="card-text">Realizei esse LP(Land Page) quando estava na BMA Soluções Digitais</p>
+                    <div class="card h-100">
+                        <img src="assets/imagens/projetos/prizmaq.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                            <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="card-body h-100">
+                            <h5 class="card-title">Projetos 2</h5>
+                            <p class="card-text">Realizei esse LP(Land Page) quando estava no primeiro estágio</p>
+                            <div class="linguagens d-none">
+                                <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt="">
                             </div>
-                        </a>
+                        </div>
                     </div>
-                </div>        
+                </div>
+                <div class="col-md-4 col-sm-6 link-projetos mb-2">
+                    <div class="card h-100">
+                        <img src="assets/imagens/projetos/grupo_boschi.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                            <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Projetos 3</h5>
+                            <p class="card-text">Realizei esse LP(Land Page) quando estava no primeiro estágio</p>
+                            <div class="linguagens d-none">
+                                <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="projetos-restantes" class="row d-none link-projetos">
                 <div class="col-md-4 col-12 ">
-                    <div class="card">
-                        <a class="text-decoration-none" href="">
-                            <div class="card-body">
-                                <h5 class="card-title">Bma Soluções Digitais (LP Sistemas)</h5>
-                                <p class="card-text">Descrição do projeto 4.</p>
+                    <div class="card h-100">
+                        <img src="assets/imagens/projetos/bma_lp_sistema.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                            <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
+                            <button class="btn btn-primary">
+                                <a href="https://seusite.com" target="_blank">Visite o Site</a>
+                            </button>
+                        </div>
+                        <div class="card-body h-100">
+                            <h5 class="card-title">Projetos 4</h5>
+                            <p class="card-text">Realizei esse LP(Land Page) quando estava no primeiro estágio</p>
+                            <div class="linguagens d-none">
+                                <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
-                    <div class="card">
-                        <a class="text-decoration-none" href="">
-                            <div class="card-body">
-                                <h5 class="card-title">Projeto 5</h5>
-                                <p class="card-text">Descrição do projeto 5.</p>
-                            </div>
-                        </a>
+                <div class="col-md-4 col-12 my-2">
+                    <div class="card h-100">
+                    <img src="assets/imagens/projetos/site_em_construcao.jpg" class="img-fluid" alt="">
+                         <!--  <div class="overlay">
+                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                        </div>-->
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 5</h5>
+                            <p class="card-text">Em Breve</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
-                    <div class="card">
-                        <a class="text-decoration-none" href="">
-                            <div class="card-body">
-                                <h5 class="card-title">Projeto 6</h5>
-                                <p class="card-text">Descrição do projeto 6.</p>
-                            </div>
-                        </a>
+                <div class="col-md-4 col-12 my-2">
+                    <div class="card h-100">
+                        <img src="assets/imagens/projetos/site_em_construcao.jpg" class="img-fluid" alt="">
+                      <!--  <div class="overlay">
+                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                        </div>-->
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 6</h5>
+                            <p class="card-text">Em Breve</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Botão "Ver Mais" -->
         <div class="col-md-12 text-center mt-3">
-            <button id="ver-mais-menos" class="btn ver-mais">Ver Mais</button>
+            <button id="ver-mais-menos" class="btn button ver-mais">Ver Mais</button>
+        </div>
+    </section>
+    <section class="habilidades" id="habilidade">
+        <div  class="container py-5">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                </div>
+            </div>
         </div>
     </section>
 

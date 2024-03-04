@@ -29,16 +29,16 @@
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                         <ul class="navbar-nav text-start">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                <a class="nav-link text-white active" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#sobremim">Sobre mim</a>
+                                <a class="nav-link text-white" href="#sobremim">Sobre mim</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#projetos">Projetos</a>
+                                <a class="nav-link text-white" href="#projetos">Projetos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#habilidades">Habilidades</a>
+                                <a class="nav-link text-white" href="#habilidades">Habilidades</a>
                             </li>
                         </ul>
                     </div>

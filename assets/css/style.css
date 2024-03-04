@@ -1,6 +1,7 @@
 :root{
-    --color-nav:#6a9eda;
-    --color-border-nav:#5086c1;
+    --color-nav:#4223d6;
+    --color-border-nav:#4223d6;
+    --color-home:#5834e0;
 
     body{
         color: var(--cor-principal);
@@ -16,14 +17,20 @@
 .fundo-nav{
     background-color: var(--color-nav);
     height: auto;
+    font-size: 20px;
+    font-weight: 700;
 }
+
 .logo-header{
     height: 75px;
     border-radius: 3rem;
 }
 
 .home{
-    background-image: url(../imagens/banner1.jpg);
+    background-color: var(--color-home);
+}
+.sobremim{
+    background-image: url(../imagens/fundo.png);
     min-height: auto;
     background-attachment: fixed;
     background-position: top;
@@ -33,18 +40,66 @@
 }
 
 .foto-perfil{
-    height: 450px;
     border-radius: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0,  0, 0, 0.7), 0 6px 20px
 }
-section 
-    .sobremim {
-        font-family: 'Roboto', sans-serif;
-        text-align: justify;
-        line-height: 1.5;
-        max-width: 90%;
-        margin: auto;    
-    }
-    card{
-        padding: 0%;
-    }
+
+.link-projetos a{
+    color: #000000;
+    font-weight: 400;  
+}
+
+.ver-mais {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 1.5s ease-in;
+    color: #000000;
+    z-index: 1;
+   }
+   
+   .ver-mais::before,
+   .ver-mais::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   .ver-mais::before {
+    left: -10px;
+    background: #000546;
+   }
+   
+   .ver-mais::after {
+    right: -10px;
+    background: #18219a;
+   }
+   
+   .ver-mais:hover::before,
+   .ver-mais:hover::after {
+    width: 58%;
+    color: #ffffff;
+   }
+   
+   .ver-mais:hover span {
+    color: #f8f8f8;
+    transition: 0.5s;
+   }
+   
+   .ver-mais span {
+    color: #0c035e;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.5s ease-in;
+   }
+

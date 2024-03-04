@@ -27,3 +27,17 @@
     // Call the function with the sentence you want to write and the element ID
     writeSentence("Olá <?php echo $saudacao; ?>, sou Albert desenvolvedor front-end, legal ver você aqui, por favor deixe me apresentar brevemente 👇​", 0, "texto-digitado");
 </script>
+<script>
+    document.getElementById("ver-mais-menos").addEventListener("click", function() {
+        var projetosRestantes = document.getElementById("projetos-restantes");
+        var botao = document.getElementById("ver-mais-menos");
+
+        if (projetosRestantes.classList.contains("d-none")) {
+            projetosRestantes.classList.remove("d-none");
+            botao.textContent = "Ver Menos";
+        } else {
+            projetosRestantes.classList.add("d-none");
+            botao.textContent = "Ver Mais";
+        }
+    });
+</script>

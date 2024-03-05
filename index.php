@@ -9,9 +9,8 @@
     } else {
         $saudacao = ' uma boa noite';
     }
-    
-
     ?>
+
         <?php include("header.php") 
     ?>
 
@@ -42,7 +41,11 @@
                             <div class="card-body ">
                                 <h1 class="card-title fw-semibold">Sobre minha pessoa:</h1>
                                 <p class="fs-4 text-secondary">
-                                    Sou Albert desenvolvedor Front-End com conhecimento em HTML, CSS, JavaScript, PHP e também em Frameworks como Bootstrap e Tailwind
+                                    Me chamo Albert, tenho 21 anos e atualmente estou realizando estágio na área de Front-end. Sempre fui admirador pela maneira como a tecnologia funciona e evolui, admirando a funcionalidade e qualidade entregues nos sistemas aos usuários.
+                                    <br>
+                                    <br>
+                                    Acredito que isso economiza tempo e traz agilidade, além de melhorar a experiência do usuário em muitos aspectos.   
+                                    <br>
                                     <br>
                                     Sempre foi um entusiasta da tecnologia, admirando a facilidade que ela nos proporciona no nosso dia a dia e nos sistemas que utilizamos, direta ou indiretamente.
                                 </p>
@@ -56,7 +59,7 @@
                             <div class="card-body h-100">
                                 <h1 class="fw-semibold">Hard e Soft skill</h1>
                                 <div class="row">
-                                    <div class="col-md-8 col-12 my-3">
+                                    <div class="col-md-8 col-12 my-3 w-100">
                                         <h2>Hard Skills</h2>
                                         <div class="text-start">
                                             <ul>
@@ -68,7 +71,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-12 my-3">
+                                    <div class="col-md-4 col-12 my-3 w-100 ">
                                         <h2>Soft Skills</h2>
                                         <div class="text-start">
                                             <ul>
@@ -179,9 +182,6 @@
                             <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
                             <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
                             <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
-                            <button class="btn btn-primary">
-                                <a href="https://seusite.com" target="_blank">Visite o Site</a>
-                            </button>
                         </div>
                         <div class="card-body h-100">
                             <h5 class="card-title">Projetos 4</h5>
@@ -235,14 +235,66 @@
             <button id="ver-mais-menos" class="btn button ver-mais">Ver Mais</button>
         </div>
     </section>
-    <section class="habilidades" id="habilidade">
-        <div  class="container py-5">
+    <section class="habilidades" id="habilidades">
+        <div class="container py-5">
             <div class="row">
-                <div class="col-md-8 offset-md-2 text-center">
+                <div class="col-md-12 text-center">
+                    <h1>Habilidades</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Linguagens Front-End</h5>
+                            <div class="row justify-content-around">
+                                <div class="col-md-3">
+                                    <img src="assets/imagens/linguagens/html-5.png" class="img-fluid habilidade-img" alt="HTML" data-descricao="HTML é uma linguagem de marcação para criar páginas web.">
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="assets/imagens/linguagens/css-3.png" class="img-fluid habilidade-img" alt="CSS" data-descricao="CSS é uma linguagem de estilo usada para estilizar elementos HTML.">
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="assets/imagens/linguagens/js.png" class="img-fluid habilidade-img" alt="JavaScript" data-descricao="JavaScript é uma linguagem de programação para tornar as páginas web interativas.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Framework CSS</h5>
+                            <div class="row justify-content-around">
+                                <div class="col-md-3">
+                                    <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid habilidade-img" alt="Bootstrap" data-descricao="Bootstrap é um framework CSS popular para desenvolvimento de sites responsivos.">
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="assets/imagens/linguagens/tailwind.png" class="img-fluid habilidade-img" alt="Tailwind CSS" data-descricao="Tailwind CSS é um framework CSS utilitário para criar designs customizados rapidamente.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="justify-content-end">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="descricao-container">
+                            <p id="descricao"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
 
 </main>
     

@@ -41,3 +41,16 @@
         }
     });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const habilidadeImgs = document.querySelectorAll('.habilidade-img');
+        const descricaoContainer = document.getElementById('descricao');
+        
+        habilidadeImgs.forEach(function(img) {
+            img.addEventListener('click', function() {
+                const descricao = this.getAttribute('data-descricao');
+                descricaoContainer.textContent = descricao;
+            });
+        });
+    });
+</script>

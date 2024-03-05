@@ -162,6 +162,10 @@
             padding: 3px;
             font-size: 35px
         }
+        
+        .overlay{
+            display: none !important;
+        }
     }
     
     

@@ -54,3 +54,30 @@
         });
     });
 </script>
+<script>
+    // Função para exibir a descrição
+    function exibirDescricao(descricao) {
+        var descricaoCard = document.getElementById('descricao-card');
+        descricaoCard.innerText = descricao;
+        descricaoCard.classList.add('mostrar');
+    }
+
+    // Função para ocultar a descrição
+    function ocultarDescricao() {
+        var descricaoCard = document.getElementById('descricao-card');
+        descricaoCard.classList.remove('mostrar');
+    }
+
+    // Adiciona eventos às imagens
+    document.querySelectorAll('.habilidade-img').forEach(function(element) {
+        element.addEventListener('click', function() {
+            var descricao = this.getAttribute('data-descricao');
+            exibirDescricao(descricao);
+        });
+    });
+
+    // Adiciona evento para ocultar a descrição quando o mouse sai da área da imagem
+    document.getElementById('habilidades').addEventListener('mouseout', function() {
+        ocultarDescricao();
+    });
+</script>

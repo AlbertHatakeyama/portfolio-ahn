@@ -150,6 +150,20 @@
         background-repeat: no-repeat;
         background-size: cover; 
     }
+
+    .habilidade-img{
+        height: 80px;
+    }
+
+    .descricao-card {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .descricao-card.mostrar {
+        opacity: 1;
+    }
+
     
 
     @media (max-width: 991px) {

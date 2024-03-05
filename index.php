@@ -134,7 +134,7 @@
                                         <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-12 col-12">
-                                        <button class="btn bg-secondary my-2">
+                                        <button class="btn bg-white my-2">
                                             <a class="text-decoration-none" href="https://www.multiclad.com.br/" target="_blank">Acessar Projeto</a>
                                         </button>
                                     </div>
@@ -326,62 +326,61 @@
         </div>
     </section>
     <section class="habilidades" id="habilidades">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1>Habilidades</h1>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Linguagens Front-End</h5>
-                            <div class="row justify-content-around">
-                                <div class="col-md-3">
-                                    <img src="assets/imagens/linguagens/html-5.png" class="img-fluid habilidade-img" alt="HTML" data-descricao="HTML é uma linguagem de marcação para criar páginas web.">
-                                </div>
-                                <div class="col-md-3">
-                                    <img src="assets/imagens/linguagens/css-3.png" class="img-fluid habilidade-img" alt="CSS" data-descricao="CSS é uma linguagem de estilo usada para estilizar elementos HTML.">
-                                </div>
-                                <div class="col-md-3">
-                                    <img src="assets/imagens/linguagens/js.png" class="img-fluid habilidade-img" alt="JavaScript" data-descricao="JavaScript é uma linguagem de programação para tornar as páginas web interativas.">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Framework CSS</h5>
-                            <div class="row justify-content-around">
-                                <div class="col-md-3">
-                                    <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid habilidade-img" alt="Bootstrap" data-descricao="Bootstrap é um framework CSS popular para desenvolvimento de sites responsivos.">
-                                </div>
-                                <div class="col-md-3">
-                                    <img src="assets/imagens/linguagens/tailwind.png" class="img-fluid habilidade-img" alt="Tailwind CSS" data-descricao="Tailwind CSS é um framework CSS utilitário para criar designs customizados rapidamente.">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Habilidades</h1>
             </div>
         </div>
-        <div class="container">
-            <div class="justify-content-end">
+        <div class="row">
+            <div class="col-md-6 col-12 my-4">
                 <div class="card">
                     <div class="card-body">
-                        <div id="descricao-container">
+                        <h5 class="card-title text-center">Linguagens Front-End</h5>
+                        <div class="row justify-content-around">
+                            <div class="col-md-3">
+                                <img src="assets/imagens/linguagens/html-5.png" class="img-fluid habilidade-img" alt="HTML" data-descricao="Essa linguagem tenho 2 anos de experiência">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/imagens/linguagens/css-3.png" class="img-fluid habilidade-img" alt="CSS" data-descricao="Essa linguagem tenho 2 anos de experiência">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/imagens/linguagens/js.png" class="img-fluid habilidade-img" alt="JavaScript" data-descricao="Essa linguagem tenho 1 ano e 4 meses de experiência">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 my-5 text-start">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="descricao-card" id="descricao-card">
                             <p id="descricao"></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Framework CSS</h5>
+                        <div class="row justify-content-around">
+                            <div class="col-md-3">
+                                <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid habilidade-img" alt="Bootstrap" data-descricao="Esse frameworks 2 anos de experiência">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/imagens/linguagens/tailwind.png" class="img-fluid habilidade-img" alt="Tailwind CSS" data-descricao="Esse frameworks tenho 1 ano e 3 meses de experiência">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 

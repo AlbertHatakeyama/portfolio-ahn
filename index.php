@@ -1,4 +1,6 @@
 <?php
+ include("config.php");
+
     $hour = date('H');
 
     // Determine the appropriate greeting based on the time of day
@@ -9,10 +11,9 @@
     } else {
         $saudacao = ' uma boa noite';
     }
-    ?>
-
-        <?php include("header.php") 
-    ?>
+    
+    include("header.php") 
+?>
 
 <main class="main">
     <section class="bg-white" id="home">
@@ -105,22 +106,39 @@
                     <div class="card h-100">
                         <img src="assets/imagens/projetos/multiclad.png" class="img-fluid" alt="">
                         <div class="overlay">
-                            <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                            <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt=""> 
+                            <div class="row">
+                                <div class="col-md-12 col-12 text-center">
+                                    <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                    <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt=""> 
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button class="btn bg-white my-2">
+                                        <a class="text-decoration-none" href="https://www.multiclad.com.br/" target="_blank">Acessar Projeto</a>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body ">
                             <h5 class="card-title">Projetos 1</h5>
                             <p class="card-text">Realizei esse site quando estava no primeiro estágio</p>
                             <div class="linguagens d-none">
-                                <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                                <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt="">
-                                
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                        <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-12 col-12">
+                                        <button class="btn bg-secondary my-2">
+                                            <a class="text-decoration-none" href="https://www.multiclad.com.br/" target="_blank">Acessar Projeto</a>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -129,21 +147,39 @@
                     <div class="card h-100">
                         <img src="assets/imagens/projetos/prizmaq.png" class="img-fluid" alt="">
                         <div class="overlay">
-                            <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                            <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt="">
+                            <div class="row">
+                                <div class="col-md-12 col-12 text-center">
+                                    <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                    <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button class="btn bg-white my-2">
+                                        <a class="text-decoration-none" href="https://www.prizmaq.com.br/" target="_blank">Acessar Projeto</a>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body h-100">
                             <h5 class="card-title">Projetos 2</h5>
                             <p class="card-text">Realizei esse LP(Land Page) quando estava no primeiro estágio</p>
                             <div class="linguagens d-none">
-                                <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                                <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt="">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                        <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn bg-white my-2">
+                                            <a class="text-decoration-none" href="https://www.prizmaq.com.br/" target="_blank">Acessar Projeto</a>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -152,21 +188,39 @@
                     <div class="card h-100">
                         <img src="assets/imagens/projetos/grupo_boschi.png" class="img-fluid" alt="">
                         <div class="overlay">
-                            <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                            <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
+                            <div class="row">
+                                <div class="col-md-12 col-12 text-center">
+                                    <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                    <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button class="btn bg-white my-2">
+                                        <a class="text-decoration-none" href="https://www.grupoboschi.com.br/lp2/consorcio/" target="_blank">Acessar Projeto</a>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body ">
                             <h5 class="card-title">Projetos 3</h5>
                             <p class="card-text">Realizei esse LP(Land Page) quando estava no primeiro estágio</p>
                             <div class="linguagens d-none">
-                                <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                                <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                        <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/tailwind.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn bg-white my-2">
+                                            <a class="text-decoration-none" href="https://www.grupoboschi.com.br/lp2/consorcio/" target="_blank">Acessar Projeto</a>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -177,35 +231,62 @@
                     <div class="card h-100">
                         <img src="assets/imagens/projetos/bma_lp_sistema.png" class="img-fluid" alt="">
                         <div class="overlay">
-                            <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                            <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
+                            <div class="row">
+                                <div class="col-md-12 col-12 text-center">
+                                    <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                    <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/tailwind.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button class="btn bg-white my-2">
+                                        <a class="text-decoration-none" href="https://bmasolucoesdigitais.com.br/lp/sistemas/" target="_blank">Acessar Projeto</a>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body h-100">
                             <h5 class="card-title">Projetos 4</h5>
                             <p class="card-text">Realizei esse LP(Land Page) quando estava no primeiro estágio</p>
                             <div class="linguagens d-none">
-                                <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                                <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                                <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
+                                        <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn bg-white my-2">
+                                            <a class="text-decoration-none" href="https://bmasolucoesdigitais.com.br/lp/sistemas/" target="_blank">Acessar Projeto</a>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 my-2">
                     <div class="card h-100">
-                    <img src="assets/imagens/projetos/site_em_construcao.jpg" class="img-fluid" alt="">
-                         <!--  <div class="overlay">
-                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
-                        </div>-->
+                        <img src="assets/imagens/projetos/site_em_construcao.jpg" class="img-fluid" alt="">
+                         <!--<div class="overlay">
+                                <div class="row">
+                                    <div class="col-md-12 col-12"
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <button class="btn bg-white my-2">
+                                            <a class="text-decoration-none" href="" target="_blank">Acessar Projeto</a>
+                                        </button>
+                                    </div>
+                                </div>                              
+                            </div>-->
                         <div class="card-body">
                             <h5 class="card-title">Projeto 5</h5>
                             <p class="card-text">Em Breve</p>
@@ -215,12 +296,21 @@
                 <div class="col-md-4 col-12 my-2">
                     <div class="card h-100">
                         <img src="assets/imagens/projetos/site_em_construcao.jpg" class="img-fluid" alt="">
-                      <!--  <div class="overlay">
-                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
-                            <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                      <!--<div class="overlay">
+                            <div class="row">
+                                <div class="col-md-12 col-12"
+                                    <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                    <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button class="btn bg-white my-2">
+                                        <a class="text-decoration-none" href="" target="_blank">Acessar Projeto</a>
+                                    </button>
+                                </div>
+                            </div>
                         </div>-->
                         <div class="card-body">
                             <h5 class="card-title">Projeto 6</h5>

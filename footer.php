@@ -1,3 +1,26 @@
+<section class="footer">
+    <footer class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 text-white text-center">
+                    <h2 class="text-center">Redes Sociais</h2>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <ul class="list-unstyled">
+                                <li><i class="fa-brands fa-linkedin"></i><a class="text-decoration-none m-2" href="https://www.linkedin.com/in/albert-hatakeyama-nabarrete-75495622a/">LinkedIn</a></li>
+                                <li><i class="fa-brands fa-github"></i><a class="text-decoration-none m-2" href="https://github.com/AlbertHatakeyama">GitHub</a></li>
+                                <li><i class="fa-brands fa-whatsapp"></i><a class="text-decoration-none m-2" href="https://api.whatsapp.com/">WhatsApp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 text-center">
+                    <img src="assets/imagens/logo-ahn.jpeg" class="img fluid" alt="Perfil" id="home">
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
 </body>
 </html>
 <script rel="stylesheet" href="assets/js/bootstrap.bundle.min.js"></script>
@@ -55,29 +78,32 @@
     });
 </script>
 <script>
-    // Função para exibir a descrição
-    function exibirDescricao(descricao) {
-        var descricaoCard = document.getElementById('descricao-card');
-        descricaoCard.innerText = descricao;
-        descricaoCard.classList.add('mostrar');
-    }
+    document.addEventListener("DOMContentLoaded", function() {
+    const habilidadeImagens = document.querySelectorAll('.habilidade-footer');
+    const descricaoContainer = document.getElementById('descricao-container');
 
-    // Função para ocultar a descrição
-    function ocultarDescricao() {
-        var descricaoCard = document.getElementById('descricao-card');
-        descricaoCard.classList.remove('mostrar');
-    }
-
-    // Adiciona eventos às imagens
-    document.querySelectorAll('.habilidade-img').forEach(function(element) {
-        element.addEventListener('click', function() {
-            var descricao = this.getAttribute('data-descricao');
-            exibirDescricao(descricao);
+    habilidadeImagens.forEach(imagem => {
+        imagem.addEventListener('click', function() {
+            exibirDescricao(this.getAttribute('data-descricao'));
         });
     });
 
-    // Adiciona evento para ocultar a descrição quando o mouse sai da área da imagem
-    document.getElementById('habilidades').addEventListener('mouseout', function() {
-        ocultarDescricao();
-    });
+    function exibirDescricao(descricao) {
+        descricaoContainer.innerHTML = ''; // Limpa qualquer descrição anterior
+
+        const cardDescricao = document.createElement('div');
+        cardDescricao.classList.add('card', 'mt-2');
+
+        const cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+
+        const descricaoText = document.createTextNode(descricao);
+        cardBody.appendChild(descricaoText);
+
+        cardDescricao.appendChild(cardBody);
+
+        descricaoContainer.appendChild(cardDescricao);
+    }
+});
+
 </script>

@@ -163,9 +163,26 @@
     .descricao-card.mostrar {
         opacity: 1;
     }
+    .habilidade-footer{
+        height: 50px;
+        margin: 1rem;
+    }
+     
+    .footer{
+        background: rgb(41,44,70);
+        background: linear-gradient(76deg, rgba(41,44,70,1) 0%, rgba(28,33,64,1) 42%, rgba(2,7,68,1) 100%);
+    }
+    .footer img{
+        height: 200px;
+        border-radius: 2rem;
+        box-shadow: 0 4px 8px 0 rgba(0,  0, 0, 0.7), 0 6px 20px
+    }
 
+    .footer a{
+        color: #ffffff;
+        font-weight: 500;
+    }
     
-
     @media (max-width: 991px) {
         .linguagens{
             display: flex !important; 
@@ -180,6 +197,12 @@
         .overlay{
             display: none !important;
         }
+
+        .habilidade-footer{
+            margin: 10px;
+            height: 37px;
+        }
+        
     }
     
     

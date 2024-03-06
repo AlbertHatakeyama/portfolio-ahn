@@ -227,7 +227,7 @@
                 </div>
             </div>
             <div id="projetos-restantes" class="row d-none link-projetos">
-                <div class="col-md-4 col-12 ">
+                <div class="col-md-4 col-sm-6 link-projetos mb-2 ">
                     <div class="card h-100">
                         <img src="assets/imagens/projetos/bma_lp_sistema.png" class="img-fluid" alt="">
                         <div class="overlay">
@@ -268,7 +268,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 my-2">
+                <div class="col-md-4 col-sm-6 link-projetos mb-2">
                     <div class="card h-100">
                         <img src="assets/imagens/projetos/site_em_construcao.jpg" class="img-fluid" alt="">
                          <!--<div class="overlay">
@@ -293,7 +293,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 my-2">
+                <div class="col-md-4 col-sm-6 link-projetos mb-2">
                     <div class="card h-100">
                         <img src="assets/imagens/projetos/site_em_construcao.jpg" class="img-fluid" alt="">
                       <!--<div class="overlay">
@@ -326,66 +326,58 @@
         </div>
     </section>
     <section class="habilidades" id="habilidades">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>Habilidades</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-12 my-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Linguagens Front-End</h5>
-                        <div class="row justify-content-around">
-                            <div class="col-md-3">
-                                <img src="assets/imagens/linguagens/html-5.png" class="img-fluid habilidade-img" alt="HTML" data-descricao="Essa linguagem tenho 2 anos de experiência">
-                            </div>
-                            <div class="col-md-3">
-                                <img src="assets/imagens/linguagens/css-3.png" class="img-fluid habilidade-img" alt="CSS" data-descricao="Essa linguagem tenho 2 anos de experiência">
-                            </div>
-                            <div class="col-md-3">
-                                <img src="assets/imagens/linguagens/js.png" class="img-fluid habilidade-img" alt="JavaScript" data-descricao="Essa linguagem tenho 1 ano e 4 meses de experiência">
+        <div class="container py-5">
+                <div class="col-md-12 text-center">
+                    <h1>Habilidades</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col- col-12 h-100 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Linguagens Front-End</h4>
+                                <div class="row">
+                                    <div class="col-md-12 col-12 text-center">
+                                        <img src="assets/imagens/linguagens/html-5.png" class="img-fluid habilidade-footer" alt="HTML" data-descricao="Essa linguagem tenho 2 anos de experiência.">
+                                        <img src="assets/imagens/linguagens/css-3.png" class="img-fluid habilidade-footer" alt="CSS" data-descricao="Essa linguagem tenho 2 anos de experiência.">
+                                        <img src="assets/imagens/linguagens/js.png" class="img-fluid habilidade-footer" alt="JavaScript" data-descricao="Essa linguagem tenho 1 ano e 4 meses de experiência.">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-12 my-5 text-start">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="descricao-card" id="descricao-card">
-                            <p id="descricao"></p>
+                    <div class="col-md-4 col- col-12 h-100 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Linguagens Back-End</h4>
+                                <div class="row ">
+                                    <div class="col-md-12 col-12 text-center">
+                                        <img src="assets/imagens/linguagens/php.png" class="img-fluid habilidade-footer" alt="PHP" data-descricao="Essa linguagem 2 anos de experiência.">
+                                        <img src="assets/imagens/linguagens/python.jpg" class="img-fluid habilidade-footer" alt="Python" data-descricao="Esse frameworks tenho 1 ano de experiência.">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-md-4 col- col-12 h-100 my-2 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Framework CSS</h4>
+                                <div class="row ">
+                                    <div class="col-md-12 col-12 text-center">
+                                        <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid habilidade-footer" alt="Bootstrap" data-descricao="Esse frameworks 2 anos de experiência.">
+                                        <img src="assets/imagens/linguagens/tailwind.png" class="img-fluid habilidade-footer" alt="Tailwind CSS" data-descricao="Esse frameworks tenho 1 ano e 3 meses de experiência.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12 w-100 mt-3">
+                        <div id="descricao-container" class="col-md-6 col-12 fs-2 fw-medium"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Framework CSS</h5>
-                        <div class="row justify-content-around">
-                            <div class="col-md-3">
-                                <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid habilidade-img" alt="Bootstrap" data-descricao="Esse frameworks 2 anos de experiência">
-                            </div>
-                            <div class="col-md-3">
-                                <img src="assets/imagens/linguagens/tailwind.png" class="img-fluid habilidade-img" alt="Tailwind CSS" data-descricao="Esse frameworks tenho 1 ano e 3 meses de experiência">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
+    </section>
 </main>
-    
 <?php include("footer.php") ?>
 

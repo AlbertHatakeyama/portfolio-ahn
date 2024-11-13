@@ -296,85 +296,53 @@
                 </div>
                 <div class="col-md-4 col-sm-6 link-projetos mb-2">
                     <div class="card h-100">
-                        <img src="assets/imagens/projetos/grupo_boschi.png" class="img-fluid" alt="">
-                        <div class="overlay">
-                            <div class="row">
-                                <div class="col-md-12 col-12 text-center">
-                                    <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                                    <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                                    <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                                    <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                                    <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col-md-12 text-center">
-                                    <button class="btn bg-white my-2">
-                                        <a class="text-decoration-none" href="https://www.grupoboschi.com.br/lp2/consorcio/" target="_blank">Acessar Projeto</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body ">
-                            <h5 class="card-title">Projetos 3</h5>
-                            <p class="card-text">Realizei esse LP(Land Page) quando estava no primeiro estágio</p>
-                            <div class="linguagens d-none">
+                        <img src="assets/imagens/projetos/site_em_construcao.jpg" class="img-fluid" alt="">
+                         <!--<div class="overlay">
                                 <div class="row">
-                                    <div class="col-md-12 col-12">
-                                        <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                                        <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                                        <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                                        <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                                        <img src="assets/imagens/linguagens/tailwind.png" class="img-fluid" alt="">
+                                    <div class="col-md-12 col-12"
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 text-center">
                                         <button class="btn bg-white my-2">
-                                            <a class="text-decoration-none" href="https://www.grupoboschi.com.br/lp2/consorcio/" target="_blank">Acessar Projeto</a>
+                                            <a class="text-decoration-none" href="" target="_blank">Acessar Projeto</a>
                                         </button>
                                     </div>
-                                </div>
-                            </div>
+                                </div>                              
+                            </div>-->
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 5</h5>
+                            <p class="card-text">Em Breve</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="projetos-restantes" class="row d-none link-projetos">
-                <div class="col-md-4 col-sm-6 link-projetos mb-2 ">
+                <div class="col-md-4 col-sm-6 link-projetos mb-2">
                     <div class="card h-100">
-                        <img src="assets/imagens/projetos/bma_lp_sistema.png" class="img-fluid" alt="">
-                        <div class="overlay">
-                            <div class="row">
-                                <div class="col-md-12 col-12 text-center">
-                                    <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                                    <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                                    <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                                    <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                                    <img src="assets/imagens/linguagens/tailwind.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col-md-12 text-center">
-                                    <button class="btn bg-white my-2">
-                                        <a class="text-decoration-none" href="https://bmasolucoesdigitais.com.br/lp/sistemas/" target="_blank">Acessar Projeto</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body h-100">
-                            <h5 class="card-title">Projetos 4</h5>
-                            <p class="card-text">Realizei esse LP(Land Page) quando estava no primeiro estágio</p>
-                            <div class="linguagens d-none">
+                        <img src="assets/imagens/projetos/site_em_construcao.jpg" class="img-fluid" alt="">
+                         <!--<div class="overlay">
                                 <div class="row">
-                                    <div class="col-md-12 col-12">
-                                        <img src="assets/imagens/linguagens/html-5.png" class="img-fluid" alt="">
-                                        <img src="assets/imagens/linguagens/css-3.png"  class="img-fluid"alt="">
-                                        <img src="assets/imagens/linguagens/js.png" class="img-fluid" alt="">
-                                        <img src="assets/imagens/linguagens/php.png" class="img-fluid" alt="">
-                                        <img src="assets/imagens/linguagens/tailwind.svg.png" class="img-fluid" alt="">
+                                    <div class="col-md-12 col-12"
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
+                                        <img src="assets/imagens/linguagens/" class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 text-center">
                                         <button class="btn bg-white my-2">
-                                            <a class="text-decoration-none" href="https://bmasolucoesdigitais.com.br/lp/sistemas/" target="_blank">Acessar Projeto</a>
+                                            <a class="text-decoration-none" href="" target="_blank">Acessar Projeto</a>
                                         </button>
                                     </div>
-                                </div>
-                            </div>
+                                </div>                              
+                            </div>-->
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 5</h5>
+                            <p class="card-text">Em Breve</p>
                         </div>
                     </div>
                 </div>

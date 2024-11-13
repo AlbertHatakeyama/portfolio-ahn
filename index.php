@@ -1,98 +1,208 @@
 <?php
- include("config.php");
+    include("config.php");
 
-    $hour = date('H');
+    $primeiro_nome = ""; // Inicializa a variável para evitar erro se o formulário não for submetido
+    $genero = "";        // Inicializa o gênero com vazio
+    $tratamento = "";    // Inicializa o tratamento com vazio
+    $saudacao = "";      // Inicializa a saudação com vazio
 
-    // Determine the appropriate greeting based on the time of day
-    if ($hour < 12) {
-        $saudacao = ' um bom dia';
-    } elseif ($hour < 18) {
-        $saudacao = ' uma boa tarde';
-    } else {
-        $saudacao = ' uma boa noite';
+    // Verifica se o formulário foi enviado com método POST e se os campos estão preenchidos
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST["name"]) && !empty($_POST["genero"])) {
+        $primeiro_nome = htmlspecialchars($_POST["name"]); // Protege contra XSS
+        $genero = $_POST["genero"]; // Gênero selecionado pelo usuário
+
+        // Definindo saudação com base na hora do dia
+        $hour = date('H');
+        if ($hour < 12) {
+            $saudacao = 'bom dia';
+        } elseif ($hour < 18) {
+            $saudacao = 'boa tarde';
+        } else {
+            $saudacao = 'boa noite';
+        }
+
+        // Definindo o tratamento baseado no gênero
+        if ($genero == 'o') {
+            $tratamento = "Sr. $primeiro_nome";
+        } elseif ($genero == 'a') {
+            $tratamento = "Sra. $primeiro_nome";
+        } else {
+            $tratamento = "Sr(a). $primeiro_nome";
+        }
     }
-    
-    include("header.php") 
+
+    include("header.php");
+
+    // Após definir todas as variáveis, vamos verificar se temos dados para mostrar
+    $temDados = ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST["name"]) && !empty($_POST["genero"]));
+
 ?>
 
-<main class="main">
-    <section class="bg-white" id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-12 py-5">
-                    <div class="card bg-white shadow ">
-                        <div class="card-body">
-                            <h1 class="card-title fw-semibold" id="texto-digitado"></h1>   
+<main class="main">    
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="form-container justify-content-center text-center">
+                <div class="logo-container">
+                    Entre com seu nome
+                </div>
+                <form class="form" method="POST" action="process_form.php"> <!-- Envia para "process_form.php" -->
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Digite o seu primeiro nome" required>
+                    </div>
+                    <div class="form-group my-4">
+                        <select class="form-control" id="genero" name="genero" required>
+                            <option value="">Selecione gênero</option>
+                            <option value="o">Homem</option>
+                            <option value="a">Mulher</option>
+                            <option value="nao_informar">Prefiro não informar</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor, selecione um gênero.
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-12 text-end">
-                    <img src="assets/imagens/img-portifolio1.jpg" class="img-fluid foto-perfil my-5" alt="">
-                </div>
+                    <button class="form-submit-btn" type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section id="home" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="text-center text-white">
+                <h1 id="texto-digitado" class="apresentacao"></h1>
+            </div>
+
+            <div class="col-lg-12 text-center seta">
+                <div class="my-5">
+                    <i class="fa-solid fa-arrow-down-long animated-arrow"></i>
                 </div>
             </div>
         </div>
     </section>
-    <section class="sobremim" id="sobremim">
+    <section class="bg-sobre-mim">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-12">
-                    <div class="text-start my-5">
-                        <div class="card bg-white shadow ">
-                            <div class="card-body ">
-                                <h1 class="card-title fw-semibold">Sobre minha pessoa:</h1>
-                                <p class="fs-4 text-secondary">
-                                    Me chamo Albert, tenho 21 anos e atualmente estou realizando estágio na área de Front-end. Sempre fui admirador pela maneira como a tecnologia funciona e evolui, admirando a funcionalidade e qualidade entregues nos sistemas aos usuários.
-                                    <br>
-                                    <br>
-                                    Acredito que isso economiza tempo e traz agilidade, além de melhorar a experiência do usuário em muitos aspectos.   
-                                    <br>
-                                    <br>
-                                    Sempre foi um entusiasta da tecnologia, admirando a facilidade que ela nos proporciona no nosso dia a dia e nos sistemas que utilizamos, direta ou indiretamente.
-                                </p>
-                            </div>
-                        </div>
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="text-center sobremim my-5">
+                        <h1>Sobre mim</h1>
                     </div>
                 </div>
-                <div class="col-md-6 col-12">
-                    <div class="text-center my-5">
-                        <div class="card bg-white">
-                            <div class="card-body h-100">
-                                <h1 class="fw-semibold">Hard e Soft skill</h1>
-                                <div class="row">
-                                    <div class="col-md-8 col-12 my-3 w-100">
-                                        <h2>Hard Skills</h2>
-                                        <div class="text-start">
-                                            <ul>
-                                                <li>Domínio liguagens Front-end</li>
-                                                <li>Adaptabilidade e Aprendizado Contínuo</li>
-                                                <li>Design de Projetos</li>
-                                                <li>Controle de Versão</li>
-                                                <li>Lógica de Programação</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-12 my-3 w-100 ">
-                                        <h2>Soft Skills</h2>
-                                        <div class="text-start">
-                                            <ul>
-                                                <li>Comunicação</li>
-                                                <li>Flexibilidade</li>
-                                                <li>Motivação</li>
-                                                <li>Trabalho em equipe</li>
-                                                <li>Curiosidade</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                <div class="col-lg-7 col-lg-7 col-sm-12 col-12 sobremim-apresentacao">
+                    <div class="my-4">
+                        <ul class="pl-0 lista">
+                            <li>
+                                <b>Nome:</b> Albert Hatakeyama Nabarrete
+                            </li>
+                            <hr >
+                            <li>
+                                <b>Idade:</b> 22 anos
+                            </li>
+                            <hr >
+                            <li>
+                                <a href="mailto:ahnabarrete@gmail.com" class="text-decoration-none">
+                                    <b>Email:</b> ahnabarrete@gmail.com
+                                </a>
+                            </li>
+                            <hr >
+                            <li>
+                                <b>De:</b> Brasil, São Paulo, Zona Sul
+                            </li>
+                            <hr>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-lg-5 col-sm-12 col-12">
+                    <img src="assets/imagens/img-portfolio1" alt="" class="img-fluid bordas-arredondadas">
+                </div>
+                <div class="col-lg-12 col-lg-12 col-sm-12 col-12  d-flex justify-content-center mx-auto sobremim-apresentacao">
+                    <div class="my-4 p-4">
+                        <h1>Eu sou <b>Albert H. Nabarrete</b>, um Desenvolvedor Front-end</h1>
+                        <p>
+                            Atuo neste setor há três anos e tenho uma verdadeira paixão por criar! Desde sempre, me interessei por tecnologia e, em 2021, comecei a estudar programação, incentivado por meu pai e um familiar que já trabalha na área. Minha jornada começou com a criação de templates, one pages e sites utilizando HTML e CSS. Atualmente, meu objetivo é desenvolver aplicações, Sites, Land Pages e Templates responsivos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="habilidade">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="text-center habilidades-titulo my-5">
+                        <h1>Habilidades</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="card mb-4">
+                        <div class="card-header  align-items-center">
+                            <i class="uil uil-brackets-curly mr-2 text-danger"></i>
+                            <h2 class="mb-0">Front-End</h2>
+                            <p class="ml-auto text-white"><b>3 anos</b> de experiência</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span>HTML</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar " role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span>CSS</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar " role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span>JavaScript</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar " role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>]
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="card mb-4">
+                        <div class="card-header align-items-center">
+                            <i class="uil uil-server mr-2 text-danger"></i>
+                            <h2 class="mb-0">Back-End</h2>
+                            <p class="ml-auto"><b>1 ano</b> de experiência</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span>PHP</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar " role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <span>Java</span>
+                                    <span>44%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar " role="progressbar" style="width: 44%;" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="projetos my-5" id="projetos">
+    <section class="projetos " id="projetos">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-12">
@@ -325,59 +435,8 @@
             <button id="ver-mais-menos" class="btn button ver-mais">Ver Mais</button>
         </div>
     </section>
-    <section class="habilidades" id="habilidades">
-        <div class="container py-5">
-                <div class="col-md-12 text-center">
-                    <h1>Habilidades</h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col- col-12 h-100 my-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title text-center">Linguagens Front-End</h4>
-                                <div class="row">
-                                    <div class="col-md-12 col-12 text-center">
-                                        <img src="assets/imagens/linguagens/html-5.png" class="img-fluid habilidade-footer" alt="HTML" data-descricao="Essa linguagem tenho 2 anos de experiência.">
-                                        <img src="assets/imagens/linguagens/css-3.png" class="img-fluid habilidade-footer" alt="CSS" data-descricao="Essa linguagem tenho 2 anos de experiência.">
-                                        <img src="assets/imagens/linguagens/js.png" class="img-fluid habilidade-footer" alt="JavaScript" data-descricao="Essa linguagem tenho 1 ano e 4 meses de experiência.">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col- col-12 h-100 my-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title text-center">Linguagens Back-End</h4>
-                                <div class="row ">
-                                    <div class="col-md-12 col-12 text-center">
-                                        <img src="assets/imagens/linguagens/php.png" class="img-fluid habilidade-footer" alt="PHP" data-descricao="Essa linguagem 2 anos de experiência.">
-                                        <img src="assets/imagens/linguagens/python.jpg" class="img-fluid habilidade-footer" alt="Python" data-descricao="Esse frameworks tenho 1 ano de experiência.">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col- col-12 h-100 my-2 ">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title text-center">Framework CSS</h4>
-                                <div class="row ">
-                                    <div class="col-md-12 col-12 text-center">
-                                        <img src="assets/imagens/linguagens/bootstrap.png" class="img-fluid habilidade-footer" alt="Bootstrap" data-descricao="Esse frameworks 2 anos de experiência.">
-                                        <img src="assets/imagens/linguagens/tailwind.png" class="img-fluid habilidade-footer" alt="Tailwind CSS" data-descricao="Esse frameworks tenho 1 ano e 3 meses de experiência.">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-12 w-100 mt-3">
-                        <div id="descricao-container" class="col-md-6 col-12 fs-2 fw-medium"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </main>
-<?php include("footer.php") ?>
-
+<?php 
+    include("footer.php");
+?>
+ 
